@@ -15,7 +15,7 @@ export default function Slide21Plan() {
   ];
 
   return (
-    <div className="slide">
+    <div className="slide slide-21">
       <h2>План 2026 и выручка</h2>
       <p className="section-subtitle section-subtitle--hero">Сценарии</p>
 
@@ -47,7 +47,7 @@ export default function Slide21Plan() {
         </div>
       </div>
 
-      <div className="conclusion full-width conclusion--compact conclusion--tight">
+      <div className="conclusion full-width plan-metrics">
         <h3 className="metrics-title">Ключевые метрики:</h3>
         <p className="metrics-line">
           • Выручка и прибыль • Retention 95%+ • Ядро участников • Команда трекеров 100%

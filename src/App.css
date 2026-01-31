@@ -2038,3 +2038,254 @@
     margin-top: clamp(8px, 1vw, 12px);
     gap: clamp(8px, 1vw, 12px);
 }
+/* ============================================
+   SLIDE 21: ULTRA FIT (ONLY THIS SLIDE)
+   ============================================ */
+
+.slide-21 h2 {
+    margin-bottom: clamp(10px, 1.1vw, 14px);
+}
+
+.slide-21 .section-subtitle--hero {
+    margin-top: 0.35rem;
+}
+
+.slide-21 .plan-grid {
+    margin-top: clamp(8px, 1vw, 12px);
+    gap: clamp(8px, 1.1vw, 14px);
+}
+
+.slide-21 .plan-card {
+    padding: clamp(10px, 1.3vw, 14px);
+    border-radius: 18px;
+}
+
+.slide-21 .plan-card-head {
+    margin-bottom: clamp(4px, 0.6vw, 8px);
+}
+
+.slide-21 .plan-card-title {
+    font-size: clamp(18px, 1.6vw, 24px);
+}
+
+.slide-21 .plan-card-value {
+    font-size: clamp(30px, 2.6vw, 44px);
+    margin: 0 0 clamp(4px, 0.6vw, 8px);
+}
+
+.slide-21 .plan-card-note {
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.1;
+}
+
+.slide-21 .scenarios-row {
+    margin-top: clamp(6px, 0.8vw, 10px);
+    gap: clamp(8px, 1vw, 12px);
+}
+
+.slide-21 .scenarios-chips {
+    gap: clamp(6px, 0.8vw, 10px);
+}
+
+.slide-21 .scenario-chip {
+    padding: clamp(8px, 1vw, 10px);
+    border-radius: 14px;
+    gap: 2px;
+}
+
+.slide-21 .scenario-chip-label {
+    font-size: clamp(12px, 1vw, 15px);
+}
+
+.slide-21 .scenario-chip-text {
+    font-size: clamp(13px, 1.1vw, 17px);
+    line-height: 1.06;
+}
+
+.slide-21 .plan-metrics {
+    margin-top: clamp(8px, 1vw, 12px);
+    padding: clamp(10px, 1.2vw, 14px);
+}
+
+.slide-21 .metrics-title {
+    font-size: clamp(18px, 1.6vw, 24px);
+}
+
+.slide-21 .metrics-line {
+    font-size: clamp(14px, 1.15vw, 18px);
+    line-height: 1.08;
+    margin-top: clamp(4px, 0.6vw, 8px);
+}
+/* ============================================
+   SLIDE 23: PRICE — FULL CONTENT, NO CUT
+   ============================================ */
+
+.price-one {
+    margin-top: clamp(12px, 1.4vw, 18px);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(12px, 1.6vw, 18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.price-one-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(8px, 1.1vw, 12px);
+}
+
+.price-one-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: clamp(18px, 1.55vw, 26px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+.slide-23 .conclusion-line {
+    font-size: clamp(18px, 1.55vw, 26px);
+    line-height: 1.12;
+}
+/* ============================================
+   SLIDE 24: FIXATIONS — PRO LOOK
+   ============================================ */
+
+.slide-24 h2 {
+    margin-bottom: clamp(14px, 1.6vw, 22px);
+}
+
+.fix-hero {
+    border-radius: 22px;
+    padding: clamp(14px, 1.8vw, 20px);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(129, 140, 248, 0.06));
+    border: 1px solid rgba(129, 140, 248, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.fix-hero-kicker {
+    display: inline-block;
+    font-size: clamp(14px, 1.1vw, 18px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: clamp(6px, 0.8vw, 10px);
+}
+
+.fix-hero-text {
+    font-size: clamp(28px, 2.6vw, 44px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--color-accent-light);
+}
+
+.fix-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(12px, 1.6vw, 20px);
+    margin-top: clamp(12px, 1.6vw, 20px);
+}
+
+.fix-card-strong {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(12px, 1.6vw, 18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.fix-card-strong--accent {
+    border-color: rgba(245, 158, 11, 0.28);
+}
+
+.fix-card-strong-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: clamp(8px, 1vw, 12px);
+}
+
+.fix-card-strong-title {
+    margin: 0;
+    font-size: clamp(18px, 1.7vw, 26px);
+    color: var(--color-text-primary);
+}
+
+.fix-card-strong-text {
+    font-size: clamp(20px, 1.8vw, 30px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+.fix-metrics {
+    margin-top: clamp(12px, 1.6vw, 20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(10px, 1.2vw, 16px);
+    padding: clamp(10px, 1.2vw, 14px) clamp(12px, 1.4vw, 18px);
+    border-radius: 18px;
+    border: 1px solid rgba(129, 140, 248, 0.25);
+    background: rgba(99, 102, 241, 0.08);
+}
+
+.fix-metrics-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(18px, 1.6vw, 24px);
+    font-weight: 700;
+}
+
+.fix-metrics-chips {
+    display: flex;
+    gap: clamp(8px, 1vw, 12px);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.fix-metric-chip {
+    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 999px;
+    padding: clamp(8px, 1vw, 10px) clamp(12px, 1.2vw, 16px);
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.05;
+    color: var(--color-text-secondary);
+}
+
+/* 4:3 safety */
+@media (max-aspect-ratio: 4/3) {
+    .fix-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .fix-metrics {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fix-metrics-chips {
+        justify-content: flex-start;
+    }
+}
+/* ============================================
+   SLIDE 26: TIGHTER RHYTHM
+   ============================================ */
+
+.final-message--tight {
+    gap: clamp(6px, 0.9vw, 10px);
+}
+
+.final-group {
+    display: grid;
+    gap: clamp(4px, 0.7vw, 8px);
+}
+
+.divider--tight {
+    margin: clamp(10px, 1.2vw, 14px) auto;
+}
