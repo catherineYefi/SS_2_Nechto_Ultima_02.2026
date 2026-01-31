@@ -23,11 +23,11 @@ export default function Slide25Projects() {
   ];
 
   return (
-    <div className="slide">
+    <div className="slide slide-25">
       <h2>Проекты на 9 сезон</h2>
       <p className="section-subtitle section-subtitle--hero">Три ключевых направления</p>
 
-      <div className="projects-grid projects-grid--tight">
+      <div className="projects-grid projects-grid--force-3">
         <section className="project-card">
           <div className="project-head">
             <Package className="project-icon icon accent" />

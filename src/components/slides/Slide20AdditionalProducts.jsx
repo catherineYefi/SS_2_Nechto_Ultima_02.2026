@@ -13,11 +13,11 @@ export default function Slide20AdditionalProducts() {
   ];
 
   return (
-    <div className="slide">
+    <div className="slide slide-20">
       <h2>Дополнительные продукты</h2>
       <p className="section-subtitle section-subtitle--hero">СС как отдельный рычаг роста</p>
 
-      <div className="products-grid products-grid--tight">
+      <div className="products-grid products-grid--force-2">
         <section className="products-block">
           <h3 className="products-title">В тестировании:</h3>
           <ul className="products-list">

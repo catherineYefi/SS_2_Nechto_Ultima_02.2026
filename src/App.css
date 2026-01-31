@@ -2374,3 +2374,145 @@
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+/* ============================================
+   LAYOUT SAFETY: DO NOT COLLAPSE KEY GRIDS
+   (Overrides older max-aspect-ratio rules)
+   ============================================ */
+
+.timeline-grid--force-3,
+.timeline-grid.timeline-grid--force-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: clamp(12px, 1.6vw, 18px);
+}
+
+.timeline-list--tight {
+    font-size: clamp(16px, 1.35vw, 22px);
+    line-height: 1.12;
+}
+
+.converters-grid--force-3,
+.converters-grid.converters-grid--force-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.converter-title--normal {
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.retention-sup {
+    font-size: 0.75em;
+    color: var(--color-text-muted);
+}
+
+.retention-pills--compact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(8px, 1vw, 12px);
+    margin-top: clamp(10px, 1.2vw, 14px);
+}
+
+.retention-pills--compact > :nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.retention-pill--compact {
+    padding: clamp(8px, 1vw, 10px) clamp(10px, 1.1vw, 14px);
+    border-radius: 14px;
+    font-size: clamp(15px, 1.25vw, 18px);
+    line-height: 1.08;
+}
+
+.retention-footnote--compact {
+    margin-top: clamp(8px, 1vw, 12px);
+    font-size: clamp(12px, 1vw, 15px);
+    line-height: 1.08;
+}
+
+/* Products: keep 2 columns */
+.products-grid--force-2,
+.products-grid.products-grid--force-2 {
+    grid-template-columns: 1fr 1fr !important;
+}
+
+/* Plan: keep scenarios in one row, never 1 column */
+.scenarios-chips {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: clamp(8px, 1.1vw, 12px);
+}
+
+.scenario-chip {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: calc((100% - 2 * clamp(8px, 1.1vw, 12px)) / 3);
+}
+
+.scenario-chip-label,
+.scenario-chip-text {
+    margin: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+    .scenario-chip {
+        width: calc((100% - clamp(8px, 1.1vw, 12px)) / 2);
+    }
+}
+
+/* Price: 3 cols x 2 rows cards */
+.price-cards {
+    margin-top: clamp(12px, 1.4vw, 18px);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(12px, 1.6vw, 18px);
+}
+
+.price-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    padding: clamp(12px, 1.6vw, 18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: start;
+}
+
+.price-card-dot {
+    width: clamp(8px, 0.75vw, 12px);
+    height: clamp(8px, 0.75vw, 12px);
+    border-radius: 999px;
+    margin-top: 0.45em;
+    background: rgba(245, 158, 11, 0.85);
+    box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.10);
+}
+
+.price-card-text {
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+/* Projects: force 3 columns */
+.projects-grid--force-3,
+.projects-grid.projects-grid--force-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Narrow fallback only when реально узко */
+@media (max-width: 900px) {
+    .timeline-grid--force-3,
+    .converters-grid--force-3,
+    .products-grid--force-2,
+    .projects-grid--force-3,
+    .price-cards {
+        grid-template-columns: 1fr !important;
+    }
+
+    .scenario-chip {
+        width: 100%;
+    }
+}
