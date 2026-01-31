@@ -2,7 +2,7 @@ import { AlertTriangle } from 'lucide-react';
 
 export default function Slide05KeyReflections() {
   return (
-    <div className="slide text-plus-30">
+    <div className="slide">
       <h2>4 ключевые рефлексии</h2>
       
       <ul className="insight-list">

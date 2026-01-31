@@ -4,7 +4,7 @@ export default function Slide08Transition() {
   return (
     <div className="slide">
       <h2>8 сезон → 9 сезон</h2>
-      <p className="section-subtitle text-plus-30">8 сезон — переход. 9 сезон — тест новой архитектуры</p>
+      <p className="section-subtitle">8 сезон — переход. 9 сезон — тест новой архитектуры</p>
       
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '3rem', margin: '3rem 0' }}>
         <div className="comparison-box">

@@ -1,6 +1,6 @@
 export default function Slide01Title() {
   return (
-    <div className="slide title-slide text-plus-20" style={{
+    <div className="slide title-slide" style={{
       background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
       display: 'flex',
       flexDirection: 'column',

@@ -6,7 +6,7 @@ export default function Slide15NewRhythm() {
       <h2>Новый ритм работы</h2>
       <p className="section-subtitle">Ритм, который держит энергию и не выматывает</p>
       
-      <div className="timeline text-plus-30">
+      <div className="timeline">
         <div className="timeline-item">
           <Calendar className="inline-icon" />
           <h3>Старт: первые 2 недели</h3>

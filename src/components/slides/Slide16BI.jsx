@@ -6,7 +6,7 @@ export default function Slide16BI() {
       <h2>Контур БИ как фундамент качества</h2>
       <p className="section-subtitle">Подготовка как стандарт, а не опция</p>
       
-      <div className="feature-box text-plus-30">
+      <div className="feature-box">
         <h3>3 групповые встречи по 1,5 часа до СС</h3>
         <ul className="insight-list compact">
           <li className="insight-item">

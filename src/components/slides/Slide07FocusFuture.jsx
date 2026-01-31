@@ -2,7 +2,7 @@ import { Target } from 'lucide-react';
 
 export default function Slide07FocusFuture() {
   return (
-    <div className="slide text-plus-30">
+    <div className="slide">
       <h2>3 фокуса на будущее</h2>
       
       <ul className="insight-list">

@@ -2,7 +2,7 @@ import { CheckCircle } from 'lucide-react';
 
 export default function Slide04KeyInsights() {
   return (
-    <div className="slide text-plus-30">
+    <div className="slide">
       <h2>3 ключевых вывода</h2>
       
       <ul className="insight-list">

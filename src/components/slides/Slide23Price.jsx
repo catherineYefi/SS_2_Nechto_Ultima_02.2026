@@ -6,7 +6,7 @@ export default function Slide23Price() {
       <h2>Цена отсутствия Ультимы</h2>
       <p className="section-subtitle">Что теряет Нечто без Ультимы</p>
       
-      <div className="two-column text-plus-20">
+      <div className="two-column">
         <div>
           <ul className="insight-list compact">
             <li className="insight-item">
@@ -42,7 +42,7 @@ export default function Slide23Price() {
         </div>
       </div>
       
-      <div className="conclusion full-width text-plus-30">
+      <div className="conclusion full-width">
         <Lightbulb className="conclusion-icon" />
         <p><strong>Вывод:</strong> Ультима — это не просто продукт. Это инфраструктура роста всей экосистемы.</p>
       </div>

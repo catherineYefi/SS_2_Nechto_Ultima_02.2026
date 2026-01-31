@@ -5,7 +5,7 @@ export default function Slide18Trackers() {
     <div className="slide">
       <h2>Команда трекеров — сердце Ультимы</h2>
       
-      <div className="two-column text-plus-20">
+      <div className="two-column">
         <div>
           <h3>Почему трекеры — это наш ключевой актив:</h3>
           <ul className="insight-list compact">
@@ -47,7 +47,7 @@ export default function Slide18Trackers() {
         </div>
       </div>
       
-      <div className="conclusion full-width text-plus-30">
+      <div className="conclusion full-width">
         <Lightbulb className="conclusion-icon" />
         <p><strong>Вывод:</strong> Удержание сильной команды трекеров = удержание качества продукта</p>
       </div>

@@ -67,7 +67,7 @@ export default function Slide19Converters() {
         </div>
       </div>
       
-      <div className="conclusion full-width text-plus-30">
+      <div className="conclusion full-width">
         <Lightbulb className="conclusion-icon" />
         <p><strong>Стратегия:</strong> "Слёт (конвертация) → Ультима → Мастермайнд (удержание) → Кейс (social proof)"</p>
       </div>

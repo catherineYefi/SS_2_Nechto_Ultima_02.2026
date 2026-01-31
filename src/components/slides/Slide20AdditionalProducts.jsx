@@ -6,7 +6,7 @@ export default function Slide20AdditionalProducts() {
       <h2>Дополнительные продукты</h2>
       <p className="section-subtitle">СС как отдельный рычаг роста</p>
       
-      <div className="two-column text-plus-20">
+      <div className="two-column">
         <div>
           <h3>В стадии тестирования (9 сезон):</h3>
           <ul className="insight-list compact">
@@ -40,7 +40,7 @@ export default function Slide20AdditionalProducts() {
         </div>
       </div>
       
-      <div className="conclusion full-width text-plus-30">
+      <div className="conclusion full-width">
         <Lightbulb className="conclusion-icon" />
         <p><strong>Логика:</strong> Вход через Ультиму или СС → допродажа внутри года</p>
       </div>

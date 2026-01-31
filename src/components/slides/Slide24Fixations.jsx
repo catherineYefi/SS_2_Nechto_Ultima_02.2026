@@ -2,7 +2,7 @@ import { Target, CheckCircle } from 'lucide-react';
 
 export default function Slide24Fixations() {
   return (
-    <div className="slide text-plus-20">
+    <div className="slide">
       <h2>Фиксации на 9 сезон</h2>
       
       <div className="big-quote highlight">

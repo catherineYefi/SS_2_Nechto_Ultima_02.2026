@@ -5,7 +5,7 @@ export default function Slide12Problems() {
     <div className="slide">
       <h2>Почему прошлая модель Ультимы не работала</h2>
       
-      <div className="two-column text-plus-20">
+      <div className="two-column">
         <div>
           <h3>Проблемы позиционирования</h3>
           <ul className="insight-list compact">
@@ -47,7 +47,7 @@ export default function Slide12Problems() {
         </div>
       </div>
       
-      <div className="conclusion full-width text-plus-30">
+      <div className="conclusion full-width">
         <Lightbulb className="conclusion-icon" />
         <p><strong>Вывод:</strong> Ультима ощущалась как сервис, а не как элитное сообщество внутри Нечто</p>
       </div>

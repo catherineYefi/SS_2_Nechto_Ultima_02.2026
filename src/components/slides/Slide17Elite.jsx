@@ -6,7 +6,7 @@ export default function Slide17Elite() {
       <h2>Элитарность и "движ" Ультимы</h2>
       <p className="section-subtitle">То, чего не хватало раньше</p>
       
-      <ul className="insight-list text-plus-30">
+      <ul className="insight-list">
         <li className="insight-item">
           <Target className="icon" />
           <span className="text">Мастермайнды — 3 раза в год (только для участников Ультимы)</span>

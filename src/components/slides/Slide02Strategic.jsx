@@ -2,7 +2,7 @@ import { Users, Target, MessageCircle, BarChart3, Zap, TrendingUp, MessageSquare
 
 export default function Slide02Strategic() {
   return (
-    <div className="slide text-plus-20">
+    <div className="slide">
       <h2>Нечто: сообщество или система результата?</h2>
       
       <table className="comparison-table">
