@@ -11,6 +11,7 @@ import Slide05KeyReflections from './components/slides/Slide05KeyReflections';
 import Slide06KeyNumbers from './components/slides/Slide06KeyNumbers';
 import Slide07FocusFuture from './components/slides/Slide07FocusFuture';
 import Slide08Transition from './components/slides/Slide08Transition';
+import Slide07AManagement from './components/slides/Slide07AManagement';
 import Slide09Market from './components/slides/Slide09Market';
 import Slide10Niche from './components/slides/Slide10Niche';
 import Slide11Scale from './components/slides/Slide11Scale';
@@ -41,6 +42,7 @@ function App() {
     <Slide05KeyReflections key="slide-5" />,
     <Slide06KeyNumbers key="slide-6" />,
     <Slide07FocusFuture key="slide-7" />,
+    <Slide07AManagement key="slide-7a" />,
     <Slide08Transition key="slide-8" />,
     <Slide09Market key="slide-9" />,
     <Slide10Niche key="slide-10" />,
