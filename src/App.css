@@ -722,3 +722,164 @@
         grid-template-columns: 1fr;
     }
 }
+/* ============================================
+   SLIDES 02–06: PACKAGING (APPLE-LIKE)
+   ============================================ */
+
+.slide-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-subtitle--hero {
+    font-size: clamp(24px, 2.2vw, 42px);
+    line-height: 1.2;
+    margin-top: 0.75rem;
+}
+
+.compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(20px, 2.2vw, 36px);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.compare-column {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(18px, 2.2vw, 28px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.compare-column--accent {
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.compare-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(24px, 2.2vw, 40px);
+    margin-bottom: clamp(14px, 1.6vw, 22px);
+}
+
+.compare-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(12px, 1.6vw, 18px);
+}
+
+.compare-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: clamp(22px, 2vw, 34px);
+    line-height: 1.2;
+}
+
+.conclusion--compact {
+    margin-top: clamp(18px, 2vw, 28px);
+    padding: clamp(14px, 1.6vw, 18px) clamp(16px, 1.8vw, 22px);
+}
+
+.conclusion--compact p {
+    font-size: clamp(24px, 2vw, 32px);
+    line-height: 1.2;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(18px, 2vw, 28px);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.pillar-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 22px;
+    padding: clamp(18px, 2.2vw, 30px);
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.pillar-icon {
+    width: clamp(28px, 2vw, 40px);
+    height: clamp(28px, 2vw, 40px);
+}
+
+.pillar-text {
+    font-size: clamp(24px, 2.2vw, 40px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+}
+
+.reflections-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 2vw, 26px);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.reflection-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(16px, 2vw, 26px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.reflection-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.reflection-number {
+    font-size: clamp(22px, 1.8vw, 30px);
+    font-weight: 700;
+    color: var(--color-text-muted);
+    letter-spacing: 0.08em;
+}
+
+.reflection-icon {
+    width: clamp(28px, 2vw, 38px);
+    height: clamp(28px, 2vw, 38px);
+}
+
+.reflection-text {
+    font-size: clamp(22px, 2vw, 34px);
+    line-height: 1.2;
+}
+
+.note-compact {
+    margin-top: clamp(18px, 2vw, 28px);
+    padding: clamp(12px, 1.6vw, 18px) clamp(14px, 1.8vw, 22px);
+}
+
+.note-compact p {
+    font-size: clamp(22px, 1.9vw, 30px);
+    line-height: 1.2;
+}
+
+.presentation-metrics .metric-value {
+    font-size: clamp(64px, 6vw, 96px);
+}
+
+.presentation-metrics .metric-label {
+    font-size: clamp(20px, 1.6vw, 26px);
+}
+
+.presentation-metrics .metric-context {
+    font-size: clamp(18px, 1.4vw, 22px);
+}
