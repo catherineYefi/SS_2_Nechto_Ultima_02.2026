@@ -31,9 +31,9 @@ export default function Slide07AManagement() {
         </div>
       </section>
 
-      <div className="conclusion full-width conclusion--compact conclusion--tight">
-        <CheckCircle className="conclusion-icon" />
-        <p>
+      <div className="conclusion full-width conclusion--compact conclusion--tight conclusion--inline">
+        <CheckCircle className="conclusion-icon conclusion-icon--inline" />
+        <p className="conclusion-text-inline">
           <strong>8 сезон — не провал, а подготовка к смене класса</strong>
         </p>
       </div>
