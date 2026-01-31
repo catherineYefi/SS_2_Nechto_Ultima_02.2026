@@ -8,26 +8,30 @@ export default function Slide07AManagement() {
         Как новая команда пересобрала продукт в движении
       </p>
 
-      <section className="story-block">
-        <h3 className="story-title">Контекст</h3>
-        <div className="story-lines">
-          <p className="story-line">В 8 сезоне новая команда взяла полное управление Ultima</p>
-          <p className="story-line">Пересборка продукта &quot;на ходу&quot;, без паузы, без внешних ресурсов</p>
-        </div>
+      <section className="story-block story-block--tight">
+        <h3 className="story-title story-title--tight">Контекст</h3>
+
+        <p className="story-paragraph">
+          В 8 сезоне новая команда взяла полное управление Ultima
+          <br />
+          Пересборка продукта &quot;на ходу&quot;, без паузы, без внешних ресурсов
+        </p>
       </section>
 
-      <section className="story-callout">
-        <p className="story-callout-lead">
+      <section className="story-callout story-callout--tight">
+        <p className="story-callout-lead story-callout-lead--tight">
           <strong>Несмотря на сложности:</strong>
         </p>
 
         <div className="story-callout-row">
           <AlertTriangle className="inline-icon icon warning" />
-          <p className="story-callout-text">Продукт стал управляемым и автономным</p>
+          <p className="story-callout-text story-callout-text--tight">
+            Продукт стал управляемым и автономным
+          </p>
         </div>
       </section>
 
-      <div className="conclusion full-width conclusion--compact">
+      <div className="conclusion full-width conclusion--compact conclusion--tight">
         <CheckCircle className="conclusion-icon" />
         <p>
           <strong>8 сезон — не провал, а подготовка к смене класса</strong>
