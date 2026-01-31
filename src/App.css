@@ -883,3 +883,222 @@
 .presentation-metrics .metric-context {
     font-size: clamp(18px, 1.4vw, 22px);
 }
+/* ============================================
+   SLIDES 07–11: PACKAGING (APPLE-LIKE)
+   ============================================ */
+
+.compare-text {
+    font-size: clamp(22px, 2vw, 34px);
+    line-height: 1.2;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.management-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 2vw, 28px);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.management-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(16px, 2.1vw, 26px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.management-block--accent {
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.management-block--wide {
+    margin-top: clamp(16px, 2vw, 26px);
+}
+
+.management-title {
+    font-size: clamp(24px, 2.2vw, 40px);
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+}
+
+.management-lines {
+    display: grid;
+    gap: clamp(10px, 1.2vw, 14px);
+}
+
+.management-line {
+    font-size: clamp(22px, 2vw, 32px);
+    line-height: 1.2;
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.management-lead {
+    font-size: clamp(22px, 2vw, 32px);
+    margin: 0 0 clamp(10px, 1.2vw, 16px);
+}
+
+.management-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(12px, 1.6vw, 18px);
+}
+
+.management-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: clamp(22px, 2vw, 32px);
+    line-height: 1.2;
+    color: var(--color-text-secondary);
+}
+
+.chips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(12px, 1.6vw, 18px);
+    margin-top: clamp(10px, 1.2vw, 16px);
+}
+
+.chip {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: clamp(12px, 1.6vw, 18px);
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.chip-icon {
+    width: clamp(26px, 2vw, 36px);
+    height: clamp(26px, 2vw, 36px);
+    flex: 0 0 auto;
+}
+
+.chip-text {
+    font-size: clamp(20px, 1.9vw, 30px);
+    line-height: 1.2;
+    color: var(--color-text-secondary);
+}
+
+.market-axis {
+    font-size: clamp(28px, 2.4vw, 44px);
+    line-height: 1.15;
+    margin-top: clamp(10px, 1.2vw, 16px);
+    margin-bottom: clamp(16px, 2vw, 26px);
+    letter-spacing: -0.01em;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 2vw, 28px);
+}
+
+.market-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(16px, 2.1vw, 26px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.market-block--accent {
+    border-color: rgba(245, 158, 11, 0.35);
+}
+
+.market-title {
+    font-size: clamp(24px, 2.2vw, 40px);
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+}
+
+.market-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(10px, 1.4vw, 16px);
+}
+
+.market-item {
+    font-size: clamp(22px, 2vw, 32px);
+    line-height: 1.2;
+    color: var(--color-text-secondary);
+}
+
+.presentation-table {
+    font-size: clamp(18px, 1.7vw, 28px);
+    margin-top: clamp(14px, 1.6vw, 20px);
+}
+
+.presentation-table thead th {
+    font-size: clamp(20px, 1.9vw, 30px);
+    padding: clamp(12px, 1.4vw, 18px);
+}
+
+.presentation-table tbody td {
+    font-size: clamp(18px, 1.7vw, 28px);
+    padding: clamp(12px, 1.4vw, 18px);
+}
+
+.axis-line {
+    font-size: clamp(28px, 2.4vw, 44px);
+    line-height: 1.15;
+    margin-top: clamp(10px, 1.2vw, 16px);
+    margin-bottom: clamp(16px, 2vw, 26px);
+    letter-spacing: -0.01em;
+}
+
+.scale-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 2vw, 28px);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.scale-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(16px, 2.1vw, 26px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.scale-block--accent {
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.scale-title {
+    font-size: clamp(24px, 2.2vw, 40px);
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+}
+
+.scale-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(10px, 1.4vw, 16px);
+}
+
+.scale-item {
+    font-size: clamp(22px, 2vw, 32px);
+    line-height: 1.2;
+    color: var(--color-text-secondary);
+}
+
+.scale-metric .metric-value {
+    font-size: clamp(56px, 5vw, 88px);
+}
+
+.scale-metric .metric-label {
+    font-size: clamp(20px, 1.7vw, 26px);
+}
+
+.scale-metric .metric-context {
+    font-size: clamp(18px, 1.4vw, 22px);
+}
