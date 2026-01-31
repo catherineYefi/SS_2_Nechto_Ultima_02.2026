@@ -1102,3 +1102,92 @@
 .scale-metric .metric-context {
     font-size: clamp(18px, 1.4vw, 22px);
 }
+/* ============================================
+   SLIDE 07A SPLIT: STORY + PROOF
+   ============================================ */
+
+.story-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(16px, 2.1vw, 26px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.story-title {
+    font-size: clamp(24px, 2.2vw, 40px);
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+}
+
+.story-lines {
+    display: grid;
+    gap: clamp(10px, 1.2vw, 14px);
+}
+
+.story-line {
+    font-size: clamp(22px, 2vw, 32px);
+    line-height: 1.2;
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+.story-callout {
+    margin-top: clamp(16px, 2vw, 26px);
+    padding: clamp(14px, 1.8vw, 22px) clamp(16px, 2vw, 26px);
+    border-radius: 20px;
+    border: 1px solid rgba(245, 158, 11, 0.28);
+    background: rgba(245, 158, 11, 0.08);
+}
+
+.story-callout-lead {
+    margin: 0 0 clamp(10px, 1.2vw, 14px);
+    font-size: clamp(22px, 2vw, 32px);
+}
+
+.story-callout-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.story-callout-text {
+    margin: 0;
+    font-size: clamp(24px, 2.2vw, 36px);
+    line-height: 1.2;
+}
+
+.evidence-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(14px, 1.8vw, 22px);
+    margin-top: clamp(18px, 2vw, 28px);
+}
+
+.evidence-metric-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: clamp(16px, 2.1vw, 26px);
+}
+
+.evidence-metric-icon .icon {
+    width: clamp(28px, 2vw, 40px);
+    height: clamp(28px, 2vw, 40px);
+}
+
+.evidence-metric-text {
+    font-size: clamp(20px, 1.8vw, 28px);
+    line-height: 1.2;
+    color: var(--color-text-secondary);
+}
+
+.evidence-wall {
+    margin-top: clamp(16px, 2vw, 26px);
+}
+
+.evidence-title {
+    font-size: clamp(24px, 2.2vw, 40px);
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+}

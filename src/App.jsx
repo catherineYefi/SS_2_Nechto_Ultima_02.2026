@@ -10,8 +10,9 @@ import Slide04KeyInsights from './components/slides/Slide04KeyInsights';
 import Slide05KeyReflections from './components/slides/Slide05KeyReflections';
 import Slide06KeyNumbers from './components/slides/Slide06KeyNumbers';
 import Slide07FocusFuture from './components/slides/Slide07FocusFuture';
-import Slide08Transition from './components/slides/Slide08Transition';
 import Slide07AManagement from './components/slides/Slide07AManagement';
+import Slide07BManagementProof from './components/slides/Slide07BManagementProof';
+import Slide08Transition from './components/slides/Slide08Transition';
 import Slide09Market from './components/slides/Slide09Market';
 import Slide10Niche from './components/slides/Slide10Niche';
 import Slide11Scale from './components/slides/Slide11Scale';
@@ -33,7 +34,7 @@ import Slide26Final from './components/slides/Slide26Final';
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
     <Slide01Title key="slide-1" />,
     <Slide02Strategic key="slide-2" />,
@@ -43,6 +44,7 @@ function App() {
     <Slide06KeyNumbers key="slide-6" />,
     <Slide07FocusFuture key="slide-7" />,
     <Slide07AManagement key="slide-7a" />,
+    <Slide07BManagementProof key="slide-7b" />,
     <Slide08Transition key="slide-8" />,
     <Slide09Market key="slide-9" />,
     <Slide10Niche key="slide-10" />,
@@ -104,10 +106,8 @@ function App() {
 
   return (
     <div className="presentation">
-      <div className="slide-container">
-        {slides[currentSlide]}
-      </div>
-      
+      <div className="slide-container">{slides[currentSlide]}</div>
+
       <Navigation
         onPrev={prevSlide}
         onNext={nextSlide}
