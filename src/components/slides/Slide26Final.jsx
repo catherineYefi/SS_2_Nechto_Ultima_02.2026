@@ -1,6 +1,10 @@
 export default function Slide26Final() {
   return (
     <div className="slide final-slide">
+      <div className="final-orbit" aria-hidden="true">
+        <span className="final-orbit-dot" />
+      </div>
+
       <div className="final-message final-message--tight">
         <div className="final-group">
           <p className="final-line">8 сезон — подготовка к переходу.</p>

@@ -2289,3 +2289,88 @@
 .divider--tight {
     margin: clamp(10px, 1.2vw, 14px) auto;
 }
+/* ============================================
+   SLIDE 23: BULLET DOTS INSTEAD OF LOUD ICONS
+   ============================================ */
+
+.price-one-list--bullets {
+    gap: clamp(10px, 1.2vw, 14px);
+}
+
+.price-one-item--bullet {
+    position: relative;
+    padding-left: 1.25em;
+}
+
+.price-one-item--bullet::before {
+    content: "";
+    position: absolute;
+    left: 0.15em;
+    top: 0.62em;
+    width: clamp(6px, 0.55vw, 10px);
+    height: clamp(6px, 0.55vw, 10px);
+    border-radius: 999px;
+    background: rgba(245, 158, 11, 0.75);
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.10);
+}
+
+/* ============================================
+   SLIDE 19: RETENTION — FOOTNOTE + PILLS
+   ============================================ */
+
+.retention-pills {
+    margin-top: clamp(10px, 1.2vw, 14px);
+    display: grid;
+    gap: clamp(8px, 1vw, 12px);
+}
+
+.retention-pill {
+    padding: clamp(10px, 1.1vw, 14px) clamp(12px, 1.2vw, 16px);
+    border-radius: 16px;
+    border: 1px solid rgba(129, 140, 248, 0.25);
+    background: rgba(99, 102, 241, 0.08);
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.1;
+    color: var(--color-text-secondary);
+}
+
+.retention-footnote {
+    margin-top: clamp(8px, 1vw, 12px);
+    font-size: clamp(13px, 1.1vw, 16px);
+    line-height: 1.1;
+    color: var(--color-text-muted);
+    letter-spacing: 0.01em;
+}
+
+/* ============================================
+   SLIDE 26: MINIMAL APPLE-LIKE ORBIT ANIMATION
+   ============================================ */
+
+.final-orbit {
+    position: absolute;
+    width: min(520px, 55vw);
+    height: min(520px, 55vw);
+    border-radius: 999px;
+    border: 1px solid rgba(129, 140, 248, 0.18);
+    background: radial-gradient(circle at 30% 30%, rgba(129, 140, 248, 0.10), transparent 60%);
+    filter: blur(0px);
+    animation: finalOrbitRotate 18s linear infinite;
+    pointer-events: none;
+}
+
+.final-orbit-dot {
+    position: absolute;
+    width: clamp(8px, 0.8vw, 12px);
+    height: clamp(8px, 0.8vw, 12px);
+    border-radius: 999px;
+    background: rgba(129, 140, 248, 0.9);
+    box-shadow: 0 0 0 6px rgba(129, 140, 248, 0.12);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(calc(min(520px, 55vw) / 2));
+}
+
+@keyframes finalOrbitRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
