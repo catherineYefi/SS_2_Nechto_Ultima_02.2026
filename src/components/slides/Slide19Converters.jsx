@@ -1,4 +1,4 @@
-import { CheckCircle, Flask, Target, Lightbulb } from 'lucide-react';
+import { CheckCircle, TestTube, Target, Lightbulb } from 'lucide-react';
 
 export default function Slide19Converters() {
   return (
@@ -37,11 +37,11 @@ export default function Slide19Converters() {
           <h3 style={{marginTop: '2rem'}}>НОВЫЕ гипотезы на конвертацию:</h3>
           <ul className="insight-list compact">
             <li className="insight-item">
-              <Flask className="icon" />
+              <TestTube className="icon" />
               <span className="text">Эфиры экспертов</span>
             </li>
             <li className="insight-item">
-              <Flask className="icon" />
+              <TestTube className="icon" />
               <span className="text">Эфиры трекеров по домашкам</span>
             </li>
           </ul>

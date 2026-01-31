@@ -1,4 +1,4 @@
-import { TestTube, Flask, Lightbulb } from 'lucide-react';
+import { TestTube, Beaker, Lightbulb } from 'lucide-react';
 
 export default function Slide20AdditionalProducts() {
   return (
@@ -29,11 +29,11 @@ export default function Slide20AdditionalProducts() {
           <h3>В разработке на Q1-Q2:</h3>
           <ul className="insight-list compact">
             <li className="insight-item">
-              <Flask className="icon" />
+              <Beaker className="icon" />
               <span className="text">Апсейлы внутри года: доп. СС для участников Ультимы через 3 мес</span>
             </li>
             <li className="insight-item">
-              <Flask className="icon" />
+              <Beaker className="icon" />
               <span className="text">Пакеты "Ультима + СС компании" для собственников с бизнесом 100+ млн</span>
             </li>
           </ul>
