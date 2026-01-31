@@ -1214,3 +1214,36 @@
     font-size: clamp(24px, 2.2vw, 40px);
     margin-bottom: clamp(10px, 1.2vw, 16px);
 }
+
+/* ============================================
+   SLIDE 09 MARKET: FIT WITHOUT SCROLL (TIGHT)
+   ============================================ */
+
+.market-axis {
+    font-size: clamp(24px, 2.1vw, 38px);
+    line-height: 1.12;
+    margin-top: clamp(8px, 1vw, 12px);
+    margin-bottom: clamp(12px, 1.4vw, 18px);
+}
+
+.market-grid--tight {
+    gap: clamp(12px, 1.6vw, 20px);
+}
+
+.market-block--tight {
+    padding: clamp(12px, 1.6vw, 18px);
+}
+
+.market-title--tight {
+    font-size: clamp(22px, 2vw, 34px);
+    margin-bottom: clamp(8px, 1vw, 12px);
+}
+
+.market-list--tight {
+    gap: clamp(8px, 1.1vw, 12px);
+}
+
+.market-item--tight {
+    font-size: clamp(18px, 1.55vw, 26px);
+    line-height: 1.12;
+}

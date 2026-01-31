@@ -9,9 +9,9 @@ export default function Slide09Market() {
   ];
 
   const entryComplexity = [
-    'дорогой и конкурентный объем трафика ААА',
-    'сложное донесение смыслов',
-    'долгое выращивание амбассадоров',
+    'Дорогой и конкурентный объем трафика ААА',
+    'Сложное донесение смыслов',
+    'Долгое выращивание амбассадоров',
   ];
 
   return (
@@ -20,23 +20,23 @@ export default function Slide09Market() {
 
       <div className="market-axis">Рынок сместился от &quot;знать&quot; к &quot;делать&quot;</div>
 
-      <div className="market-grid">
-        <section className="market-block">
-          <h3 className="market-title">Сигналы рынка</h3>
-          <ul className="market-list">
+      <div className="market-grid market-grid--tight">
+        <section className="market-block market-block--tight">
+          <h3 className="market-title market-title--tight">Сигналы рынка</h3>
+          <ul className="market-list market-list--tight">
             {signals.map((t) => (
-              <li key={t} className="market-item">
+              <li key={t} className="market-item market-item--tight">
                 {t}
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="market-block market-block--accent">
-          <h3 className="market-title">Сложность входа</h3>
-          <ul className="market-list">
+        <section className="market-block market-block--accent market-block--tight">
+          <h3 className="market-title market-title--tight">Сложность входа</h3>
+          <ul className="market-list market-list--tight">
             {entryComplexity.map((t) => (
-              <li key={t} className="market-item">
+              <li key={t} className="market-item market-item--tight">
                 {t}
               </li>
             ))}
@@ -44,7 +44,7 @@ export default function Slide09Market() {
         </section>
       </div>
 
-      <div className="conclusion full-width conclusion--compact">
+      <div className="conclusion full-width conclusion--compact conclusion--tight">
         <Lightbulb className="conclusion-icon" />
         <p>
           <strong>Вывод:</strong> Побеждают те, кто доводит до решения
