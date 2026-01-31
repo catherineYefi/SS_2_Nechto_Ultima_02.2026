@@ -1,55 +1,54 @@
 import { TrendingUp, DollarSign, Award } from 'lucide-react';
 
 export default function Slide22Benefits() {
+  const benefits = [
+    {
+      icon: TrendingUp,
+      title: 'Усиление продукта',
+      items: ['Трекеры усиливают эфиры и домашки базового Нечто', 'Экспертиза и помощь команде'],
+      accent: false,
+    },
+    {
+      icon: DollarSign,
+      title: 'Рост экономики',
+      items: ['Рост LTV (жизненный цикл)', 'Рост AOV (средний чек)', 'Рост выручки и прибыли'],
+      accent: true,
+    },
+    {
+      icon: Award,
+      title: 'Удержание и репутация',
+      items: ['Удержание сильных участников', 'Кейсы и доказательства', 'Бренд элитного сообщества'],
+      accent: false,
+    },
+  ];
+
   return (
     <div className="slide">
-      <h2 style={{fontSize: '3rem', marginBottom: '1rem'}}>Что Нечто получает с Ультимой</h2>
-      
-      <div className="benefits-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', margin: '1rem 0'}}>
-        <div className="benefit-box" style={{padding: '1rem'}}>
-          <TrendingUp className="inline-icon" style={{width: '2.2rem', height: '2.2rem'}} />
-          <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Усиление продукта</h3>
-          <ul className="insight-list compact">
-            <li className="insight-item" style={{padding: '0.4rem', marginBottom: '0.3rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Трекеры усиливают эфиры и домашки базового Нечто</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.4rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Экспертиза и помощь команде</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div className="benefit-box" style={{padding: '1rem'}}>
-          <DollarSign className="inline-icon" style={{width: '2.2rem', height: '2.2rem'}} />
-          <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Рост экономики</h3>
-          <ul className="insight-list compact">
-            <li className="insight-item" style={{padding: '0.4rem', marginBottom: '0.3rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Рост LTV (жизненный цикл)</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.4rem', marginBottom: '0.3rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Рост AOV (средний чек)</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.4rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Рост выручки и прибыли</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div className="benefit-box" style={{padding: '1rem'}}>
-          <Award className="inline-icon" style={{width: '2.2rem', height: '2.2rem'}} />
-          <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Удержание и репутация</h3>
-          <ul className="insight-list compact">
-            <li className="insight-item" style={{padding: '0.4rem', marginBottom: '0.3rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Удержание сильных участников</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.4rem', marginBottom: '0.3rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Кейсы и доказательства</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.4rem'}}>
-              <span className="text" style={{fontSize: '1rem'}}>Бренд элитного сообщества</span>
-            </li>
-          </ul>
-        </div>
+      <h2>Что Нечто получает с Ультимой</h2>
+
+      <div className="benefits-grid benefits-grid--tight">
+        {benefits.map((b) => {
+          const Icon = b.icon;
+          return (
+            <section
+              key={b.title}
+              className={`benefit-card ${b.accent ? 'benefit-card--accent' : ''}`}
+            >
+              <div className="benefit-head">
+                <Icon className="benefit-icon icon accent" />
+                <h3 className="benefit-title">{b.title}</h3>
+              </div>
+
+              <ul className="benefit-list">
+                {b.items.map((t) => (
+                  <li key={t} className="benefit-item">
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })}
       </div>
     </div>
   );

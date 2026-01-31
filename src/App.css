@@ -1588,3 +1588,221 @@
         grid-template-columns: 1fr;
     }
 }
+/* ============================================
+   SLIDES 20–22: FIT + APPLE-LIKE PACKAGING
+   ============================================ */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(12px, 1.6vw, 22px);
+    margin-top: clamp(12px, 1.4vw, 18px);
+}
+
+.products-grid--tight {
+    gap: clamp(10px, 1.4vw, 18px);
+}
+
+.products-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(12px, 1.6vw, 20px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.products-block--accent {
+    border-color: rgba(245, 158, 11, 0.28);
+}
+
+.products-title {
+    font-size: clamp(22px, 2vw, 34px);
+    margin-bottom: clamp(8px, 1vw, 12px);
+}
+
+.products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: clamp(8px, 1.1vw, 12px);
+}
+
+.products-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: clamp(18px, 1.55vw, 26px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+/* Slide 21 */
+
+.plan-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(10px, 1.4vw, 18px);
+    margin-top: clamp(12px, 1.4vw, 18px);
+}
+
+.plan-grid--tight {
+    gap: clamp(10px, 1.3vw, 16px);
+}
+
+.plan-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(12px, 1.6vw, 18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.plan-card-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: clamp(6px, 0.9vw, 10px);
+}
+
+.plan-card-title {
+    font-size: clamp(20px, 1.9vw, 30px);
+    margin: 0;
+}
+
+.plan-card-value {
+    font-size: clamp(34px, 3.2vw, 52px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 clamp(6px, 0.9vw, 10px);
+}
+
+.plan-card-note {
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.15;
+    color: var(--color-text-muted);
+}
+
+.scenarios-row {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: clamp(10px, 1.2vw, 16px);
+    align-items: center;
+    margin-top: clamp(10px, 1.2vw, 16px);
+}
+
+.scenarios-title {
+    font-size: clamp(20px, 1.9vw, 30px);
+    font-weight: 700;
+}
+
+.scenarios-chips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(8px, 1.1vw, 12px);
+}
+
+.scenario-chip {
+    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: clamp(10px, 1.2vw, 14px);
+    display: grid;
+    gap: 4px;
+}
+
+.scenario-chip-label {
+    font-size: clamp(14px, 1.25vw, 18px);
+    color: var(--color-text-muted);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.scenario-chip-text {
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.1;
+    color: var(--color-text-secondary);
+}
+
+.metrics-title {
+    margin: 0;
+    font-size: clamp(20px, 1.9vw, 30px);
+}
+
+.metrics-line {
+    margin: clamp(6px, 0.8vw, 10px) 0 0;
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.15;
+    color: var(--color-text-secondary);
+}
+
+/* Slide 22 */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(10px, 1.4vw, 18px);
+    margin-top: clamp(12px, 1.4vw, 18px);
+}
+
+.benefits-grid--tight {
+    gap: clamp(10px, 1.3vw, 16px);
+}
+
+.benefit-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: clamp(12px, 1.6vw, 18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+}
+
+.benefit-card--accent {
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.benefit-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: clamp(8px, 1vw, 12px);
+}
+
+.benefit-icon {
+    width: clamp(26px, 2vw, 38px);
+    height: clamp(26px, 2vw, 38px);
+}
+
+.benefit-title {
+    font-size: clamp(20px, 1.9vw, 30px);
+    margin: 0;
+}
+
+.benefit-list {
+    margin: 0;
+    padding-left: 1.1em;
+    display: grid;
+    gap: clamp(8px, 1.1vw, 12px);
+}
+
+.benefit-item {
+    font-size: clamp(16px, 1.35vw, 20px);
+    line-height: 1.15;
+    color: var(--color-text-secondary);
+}
+
+/* 4:3 safety */
+@media (max-aspect-ratio: 4/3) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scenarios-chips {
+        grid-template-columns: 1fr;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}

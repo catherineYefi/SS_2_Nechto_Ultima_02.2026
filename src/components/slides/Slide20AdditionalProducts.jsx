@@ -1,48 +1,53 @@
 import { TestTube, Beaker, Lightbulb } from 'lucide-react';
 
 export default function Slide20AdditionalProducts() {
+  const testing = [
+    'СС для тру-десяток: 80k/участник → 800k/десятка',
+    'СС для компаний: 400-600k',
+    'Индивидуальное трекерство: точечные запросы',
+  ];
+
+  const building = [
+    'Апсейлы внутри года: СС через 3 месяца',
+    'Пакеты "Ультима + СС" для собственников 100+ млн',
+  ];
+
   return (
     <div className="slide">
-      <h2 style={{fontSize: '3rem', marginBottom: '0.8rem'}}>Дополнительные продукты</h2>
-      <p className="section-subtitle" style={{fontSize: '1.1rem', marginBottom: '1rem'}}>СС как отдельный рычаг роста</p>
-      
-      <div className="two-column" style={{gap: '1.2rem', margin: '1rem 0'}}>
-        <div>
-          <h3 style={{fontSize: '1.6rem', marginBottom: '0.8rem'}}>В тестировании:</h3>
-          <ul className="insight-list compact">
-            <li className="insight-item" style={{padding: '0.5rem', marginBottom: '0.5rem'}}>
-              <TestTube className="icon" style={{width: '1.4rem', height: '1.4rem'}} />
-              <span className="text" style={{fontSize: '1.1rem'}}>СС для тру-десяток: 80k/участник → 800k/десятка</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.5rem', marginBottom: '0.5rem'}}>
-              <TestTube className="icon" style={{width: '1.4rem', height: '1.4rem'}} />
-              <span className="text" style={{fontSize: '1.1rem'}}>СС для компаний: 400-600k</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.5rem'}}>
-              <TestTube className="icon" style={{width: '1.4rem', height: '1.4rem'}} />
-              <span className="text" style={{fontSize: '1.1rem'}}>Индивидуальное трекерство: точечные запросы</span>
-            </li>
+      <h2>Дополнительные продукты</h2>
+      <p className="section-subtitle section-subtitle--hero">СС как отдельный рычаг роста</p>
+
+      <div className="products-grid products-grid--tight">
+        <section className="products-block">
+          <h3 className="products-title">В тестировании:</h3>
+          <ul className="products-list">
+            {testing.map((t) => (
+              <li key={t} className="products-item">
+                <TestTube className="inline-icon icon accent" />
+                <span>{t}</span>
+              </li>
+            ))}
           </ul>
-        </div>
-        
-        <div>
-          <h3 style={{fontSize: '1.6rem', marginBottom: '0.8rem'}}>В разработке:</h3>
-          <ul className="insight-list compact">
-            <li className="insight-item" style={{padding: '0.5rem', marginBottom: '0.5rem'}}>
-              <Beaker className="icon" style={{width: '1.4rem', height: '1.4rem'}} />
-              <span className="text" style={{fontSize: '1.1rem'}}>Апсейлы внутри года: СС через 3 месяца</span>
-            </li>
-            <li className="insight-item" style={{padding: '0.5rem'}}>
-              <Beaker className="icon" style={{width: '1.4rem', height: '1.4rem'}} />
-              <span className="text" style={{fontSize: '1.1rem'}}>Пакеты "Ультима + СС" для собственников 100+ млн</span>
-            </li>
+        </section>
+
+        <section className="products-block products-block--accent">
+          <h3 className="products-title">В разработке:</h3>
+          <ul className="products-list">
+            {building.map((t) => (
+              <li key={t} className="products-item">
+                <Beaker className="inline-icon icon warning" />
+                <span>{t}</span>
+              </li>
+            ))}
           </ul>
-        </div>
+        </section>
       </div>
-      
-      <div className="conclusion full-width" style={{marginTop: '1rem'}}>
-        <Lightbulb className="conclusion-icon" />
-        <p style={{fontSize: '1.2rem'}}><strong>Логика:</strong> Вход → Ультима/СС → допродажа внутри года</p>
+
+      <div className="conclusion full-width conclusion--compact conclusion--tight conclusion--inline">
+        <Lightbulb className="conclusion-icon conclusion-icon--inline" />
+        <p className="conclusion-text-inline">
+          <strong>Логика:</strong> Вход → Ультима/СС → допродажа внутри года
+        </p>
       </div>
     </div>
   );

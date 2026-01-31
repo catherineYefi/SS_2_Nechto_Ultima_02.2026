@@ -17,7 +17,7 @@ export default function Slide19Converters() {
 
       <div className="converters-grid">
         <section className="converter-block">
-          <h3 className="converter-title">ДОКАЗАННЫЕ конвертеры:</h3>
+          <h3 className="converter-title">Доказанные конвертеры:</h3>
           <ul className="converter-list">
             {proven.map((t) => (
               <li key={t} className="converter-item">
@@ -29,7 +29,7 @@ export default function Slide19Converters() {
         </section>
 
         <section className="converter-block converter-block--accent">
-          <h3 className="converter-title">НОВЫЕ гипотезы:</h3>
+          <h3 className="converter-title">Новые гипотезы:</h3>
           <ul className="converter-list">
             {hypotheses.map((t) => (
               <li key={t} className="converter-item">
