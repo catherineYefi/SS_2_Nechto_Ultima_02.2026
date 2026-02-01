@@ -2704,3 +2704,186 @@
         grid-template-columns: 1fr;
     }
 }
+/* ============================================
+   NAV ALWAYS VISIBLE (COUNTER + DOTS + BAR)
+   ============================================ */
+.nav-button,
+.slide-counter,
+.progress-bar,
+.slide-dots {
+    z-index: 3000;
+}
+
+/* ============================================
+   SLIDE 26 RESUME — COMPACT FIT (NO EMOJIS)
+   ============================================ */
+
+.slide-26-resume h2 {
+    margin-bottom: clamp(10px, 1.1vw, 14px);
+}
+
+.slide-26-resume .section-subtitle--hero {
+    margin-top: 0.25rem;
+    margin-bottom: clamp(10px, 1.1vw, 14px);
+}
+
+.slide-26-resume .resume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(10px, 1.2vw, 14px);
+}
+
+.slide-26-resume .resume-bridge {
+    margin: clamp(10px, 1.1vw, 12px) 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-26-resume .resume-bridge-text {
+    border: 1px solid rgba(129, 140, 248, 0.22);
+    background: rgba(99, 102, 241, 0.08);
+    border-radius: 999px;
+    padding: clamp(6px, 0.8vw, 8px) clamp(12px, 1.1vw, 14px);
+    font-size: clamp(14px, 1.05vw, 16px);
+    line-height: 1.05;
+    color: var(--color-text-secondary);
+}
+
+.slide-26-resume .resume-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: clamp(10px, 1.15vw, 12px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.14);
+}
+
+.slide-26-resume .resume-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: clamp(8px, 0.9vw, 10px);
+}
+
+.slide-26-resume .resume-icon {
+    width: clamp(18px, 1.4vw, 22px);
+    height: clamp(18px, 1.4vw, 22px);
+    flex: 0 0 auto;
+    opacity: 0.95;
+}
+
+.slide-26-resume .resume-title {
+    margin: 0;
+    font-size: clamp(14px, 1.05vw, 16px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.slide-26-resume .resume-list {
+    margin: 0;
+    padding-left: 1.05em;
+    display: grid;
+    gap: clamp(6px, 0.7vw, 8px);
+    font-size: clamp(14px, 1.05vw, 16px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+.slide-26-resume .resume-kv {
+    display: grid;
+    gap: 4px;
+    margin-bottom: clamp(8px, 0.9vw, 10px);
+}
+
+.slide-26-resume .resume-k {
+    font-size: clamp(13px, 1vw, 15px);
+    color: var(--color-text-muted);
+}
+
+.slide-26-resume .resume-v {
+    font-size: clamp(14px, 1.05vw, 16px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+.slide-26-resume .resume-check {
+    margin-bottom: clamp(8px, 0.9vw, 10px);
+}
+.slide-26-resume .resume-check:last-child {
+    margin-bottom: 0;
+}
+
+.slide-26-resume .resume-check-line {
+    font-size: clamp(14px, 1.05vw, 16px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+.slide-26-resume .resume-sub {
+    margin-left: 0;
+    font-size: clamp(13px, 1vw, 15px);
+    line-height: 1.1;
+    color: var(--color-text-muted);
+}
+
+.slide-26-resume .resume-goal {
+    margin-bottom: clamp(8px, 0.9vw, 10px);
+}
+.slide-26-resume .resume-goal:last-child {
+    margin-bottom: 0;
+}
+
+.slide-26-resume .resume-goal-k {
+    font-size: clamp(13px, 1vw, 15px);
+    color: var(--color-text-muted);
+}
+
+.slide-26-resume .resume-goal-v {
+    font-size: clamp(14px, 1.05vw, 16px);
+    line-height: 1.12;
+    color: var(--color-text-secondary);
+}
+
+.slide-26-resume .resume-project {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-bottom: clamp(8px, 0.9vw, 10px);
+}
+.slide-26-resume .resume-project:last-child {
+    margin-bottom: 0;
+}
+
+.slide-26-resume .resume-project-n {
+    font-size: clamp(14px, 1.05vw, 16px);
+    color: var(--color-text-muted);
+    margin-top: 2px;
+}
+
+.slide-26-resume .resume-project-title {
+    font-size: clamp(14px, 1.05vw, 16px);
+    font-weight: 700;
+    color: var(--color-text-secondary);
+}
+
+/* borders by semantic color */
+.slide-26-resume .resume-card--orange { border-color: rgba(245, 158, 11, 0.22); }
+.slide-26-resume .resume-card--red { border-color: rgba(239, 68, 68, 0.20); }
+.slide-26-resume .resume-card--purple { border-color: rgba(129, 140, 248, 0.22); }
+.slide-26-resume .resume-card--green { border-color: rgba(34, 197, 94, 0.20); }
+.slide-26-resume .resume-card--blue { border-color: rgba(59, 130, 246, 0.20); }
+
+.slide-26-resume .resume-icon--orange { color: #f59e0b; }
+.slide-26-resume .resume-icon--red { color: #ef4444; }
+.slide-26-resume .resume-icon--purple { color: #818cf8; }
+.slide-26-resume .resume-icon--green { color: #22c55e; }
+.slide-26-resume .resume-icon--blue { color: #3b82f6; }
+
+/* ============================================
+   FINAL SLIDE: DO NOT PUSH TO 100vh
+   (prevents weird cropping / vertical jump)
+   ============================================ */
+.final-slide {
+    min-height: 100% !important;
+    height: 100%;
+    position: relative;
+}
