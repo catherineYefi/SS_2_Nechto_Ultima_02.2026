@@ -65,21 +65,26 @@ function App() {
     <Slide24Fixations key="slide-24" />,
     <Slide25Projects key="slide-25" />,
     <Slide26Resume key="slide-26-resume" />,
-    <Slide26Final key="slide-26-final" />,
+    <Slide26Final key="slide-26" />,
   ];
 
   const nextSlide = () => {
-    if (currentSlide < slides.length - 1) setCurrentSlide(currentSlide + 1);
+    if (currentSlide < slides.length - 1) {
+      setCurrentSlide(currentSlide + 1);
+    }
   };
 
   const prevSlide = () => {
-    if (currentSlide > 0) setCurrentSlide(currentSlide - 1);
+    if (currentSlide > 0) {
+      setCurrentSlide(currentSlide - 1);
+    }
   };
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
   };
 
+  // Keyboard navigation
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'ArrowRight' || e.key === ' ') {
@@ -99,20 +104,19 @@ function App() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentSlide, slides.length]);
+  }, [currentSlide]);
 
   return (
-    <div className="app">
-      <div className="slide-container">
-        {slides[currentSlide]}
-        <Navigation
-          currentSlide={currentSlide}
-          totalSlides={slides.length}
-          nextSlide={nextSlide}
-          prevSlide={prevSlide}
-          goToSlide={goToSlide}
-        />
-      </div>
+    <div className="presentation">
+      <div className="slide-container">{slides[currentSlide]}</div>
+
+      <Navigation
+        onPrev={prevSlide}
+        onNext={nextSlide}
+        onSlideClick={goToSlide}
+        current={currentSlide + 1}
+        total={slides.length}
+      />
     </div>
   );
 }
