@@ -2516,3 +2516,191 @@
         width: 100%;
     }
 }
+/* ============================================
+   SLIDE 26 RESUME: "ALL STORY ON ONE SLIDE"
+   ============================================ */
+
+.slide-26-resume .section-subtitle--hero {
+    margin-top: 0.25rem;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(10px, 1.2vw, 16px);
+    margin-top: clamp(12px, 1.3vw, 18px);
+}
+
+.resume-grid--bottom {
+    margin-top: clamp(10px, 1.2vw, 14px);
+}
+
+.resume-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    padding: clamp(10px, 1.2vw, 14px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.14);
+    display: grid;
+    gap: clamp(8px, 1vw, 12px);
+}
+
+.resume-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-emoji {
+    font-size: clamp(18px, 1.6vw, 24px);
+    line-height: 1;
+}
+
+.resume-title {
+    margin: 0;
+    font-size: clamp(14px, 1.15vw, 18px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+}
+
+.resume-body {
+    font-size: clamp(14px, 1.15vw, 18px);
+    line-height: 1.15;
+    color: var(--color-text-secondary);
+}
+
+.resume-list {
+    margin: 0;
+    padding-left: 1.05em;
+    display: grid;
+    gap: clamp(6px, 0.7vw, 10px);
+}
+
+.resume-body--split {
+    display: grid;
+    gap: clamp(10px, 1vw, 12px);
+}
+
+.resume-kv {
+    display: grid;
+    gap: 4px;
+}
+
+.resume-k {
+    font-size: clamp(13px, 1.05vw, 16px);
+    color: var(--color-text-muted);
+    letter-spacing: 0.02em;
+}
+
+.resume-v {
+    font-size: clamp(14px, 1.15vw, 18px);
+}
+
+.resume-bridge {
+    margin-top: clamp(10px, 1.1vw, 14px);
+    display: flex;
+    justify-content: center;
+}
+
+.resume-bridge-text {
+    border: 1px solid rgba(129, 140, 248, 0.25);
+    background: rgba(99, 102, 241, 0.08);
+    border-radius: 999px;
+    padding: clamp(8px, 0.9vw, 10px) clamp(14px, 1.2vw, 16px);
+    font-size: clamp(14px, 1.1vw, 16px);
+    line-height: 1.05;
+    color: var(--color-text-secondary);
+}
+
+/* bottom row specifics */
+.resume-check {
+    display: grid;
+    gap: 4px;
+    margin-bottom: clamp(8px, 0.9vw, 12px);
+}
+.resume-check:last-child {
+    margin-bottom: 0;
+}
+
+.resume-check-line {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.resume-check-emoji {
+    font-size: 1em;
+    line-height: 1;
+}
+
+.resume-sub {
+    font-size: clamp(13px, 1.05vw, 16px);
+    line-height: 1.12;
+    color: var(--color-text-muted);
+    margin-left: 1.55em;
+}
+
+.resume-goal {
+    display: grid;
+    gap: 4px;
+    margin-bottom: clamp(10px, 1vw, 12px);
+}
+.resume-goal:last-child {
+    margin-bottom: 0;
+}
+.resume-goal-k {
+    font-size: clamp(13px, 1.05vw, 16px);
+    color: var(--color-text-muted);
+}
+.resume-goal-v {
+    font-size: clamp(14px, 1.15vw, 18px);
+}
+
+.resume-project {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-bottom: clamp(10px, 1vw, 12px);
+}
+.resume-project:last-child {
+    margin-bottom: 0;
+}
+.resume-project-n {
+    font-size: clamp(14px, 1.15vw, 18px);
+    color: var(--color-text-muted);
+    margin-top: 2px;
+}
+.resume-project-title {
+    font-size: clamp(14px, 1.15vw, 18px);
+    color: var(--color-text-secondary);
+    font-weight: 700;
+}
+
+/* subtle color accents per block */
+.resume-card--orange {
+    border-color: rgba(245, 158, 11, 0.25);
+}
+
+.resume-card--red {
+    border-color: rgba(239, 68, 68, 0.22);
+}
+
+.resume-card--purple {
+    border-color: rgba(129, 140, 248, 0.25);
+}
+
+.resume-card--green {
+    border-color: rgba(34, 197, 94, 0.22);
+}
+
+.resume-card--blue {
+    border-color: rgba(59, 130, 246, 0.22);
+}
+
+/* narrow fallback */
+@media (max-width: 980px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+}

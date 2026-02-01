@@ -30,6 +30,7 @@ import Slide22Benefits from './components/slides/Slide22Benefits';
 import Slide23Price from './components/slides/Slide23Price';
 import Slide24Fixations from './components/slides/Slide24Fixations';
 import Slide25Projects from './components/slides/Slide25Projects';
+import Slide26Resume from './components/slides/Slide26Resume';
 import Slide26Final from './components/slides/Slide26Final';
 
 function App() {
@@ -63,26 +64,22 @@ function App() {
     <Slide23Price key="slide-23" />,
     <Slide24Fixations key="slide-24" />,
     <Slide25Projects key="slide-25" />,
-    <Slide26Final key="slide-26" />,
+    <Slide26Resume key="slide-26-resume" />,
+    <Slide26Final key="slide-26-final" />,
   ];
 
   const nextSlide = () => {
-    if (currentSlide < slides.length - 1) {
-      setCurrentSlide(currentSlide + 1);
-    }
+    if (currentSlide < slides.length - 1) setCurrentSlide(currentSlide + 1);
   };
 
   const prevSlide = () => {
-    if (currentSlide > 0) {
-      setCurrentSlide(currentSlide - 1);
-    }
+    if (currentSlide > 0) setCurrentSlide(currentSlide - 1);
   };
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
   };
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'ArrowRight' || e.key === ' ') {
@@ -102,19 +99,20 @@ function App() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentSlide]);
+  }, [currentSlide, slides.length]);
 
   return (
-    <div className="presentation">
-      <div className="slide-container">{slides[currentSlide]}</div>
-
-      <Navigation
-        onPrev={prevSlide}
-        onNext={nextSlide}
-        onSlideClick={goToSlide}
-        current={currentSlide + 1}
-        total={slides.length}
-      />
+    <div className="app">
+      <div className="slide-container">
+        {slides[currentSlide]}
+        <Navigation
+          currentSlide={currentSlide}
+          totalSlides={slides.length}
+          nextSlide={nextSlide}
+          prevSlide={prevSlide}
+          goToSlide={goToSlide}
+        />
+      </div>
     </div>
   );
 }
